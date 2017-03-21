@@ -1,0 +1,8 @@
+c:\dev\training\tree\bin\Debug\netcoreapp1.1\tree.deps.json
+c:\dev\training\tree\bin\Debug\netcoreapp1.1\tree.runtimeconfig.json
+c:\dev\training\tree\bin\Debug\netcoreapp1.1\tree.runtimeconfig.dev.json
+c:\dev\training\tree\bin\Debug\netcoreapp1.1\tree.dll
+c:\dev\training\tree\bin\Debug\netcoreapp1.1\tree.pdb
+c:\dev\training\tree\obj\Debug\netcoreapp1.1\tree.AssemblyInfo.cs
+c:\dev\training\tree\obj\Debug\netcoreapp1.1\tree.dll
+c:\dev\training\tree\obj\Debug\netcoreapp1.1\tree.pdb
