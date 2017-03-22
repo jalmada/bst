@@ -66,10 +66,28 @@ namespace DataStructures
        }
 
        private int GetSecondLargestValue(Node node, Node parentNode){
-           if(node == null) { return -1;}
-           else if (node.Left == null && node.Right == null) { return parentNode == null ? -1 : parentNode.Value;}
-           else if (node.Right == null) {return node.Left.Value;}
-           else return GetSecondLargestValue(node.Right, node);
+           if(node == null) { 
+               return -1;
+            }
+           else if (node.Left == null && node.Right == null) { 
+               return parentNode == null ? -1 : parentNode.Value;
+            }
+           else if (node.Right == null) {
+               return GetLargestElement(node.Left);
+            }
+           else {
+               return GetSecondLargestValue(node.Right, node);
+           }
+       }
+
+       private int GetLargestElement(Node node){
+            var currentNode = node;
+
+            while(currentNode.Right != null)
+            {
+                currentNode = currentNode.Right;
+            }
+            return currentNode == null ? -1 : currentNode.Value;
        }
     }
 
