@@ -19,30 +19,30 @@ namespace tree
             Console.WriteLine(val);
             tree.Insert(val);
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
 
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
             
-            val = rand.Next(10);
-            Console.WriteLine(val);
-            tree.Insert(val);
+            // val = rand.Next(10);
+            // Console.WriteLine(val);
+            // tree.Insert(val);
             
             Console.WriteLine(tree.ToStringInOrder());
             Console.WriteLine(tree.ToStringDepthFirst());
@@ -51,6 +51,8 @@ namespace tree
             Console.WriteLine(tree.ToStringLevel(0));
             Console.WriteLine(tree.ToStringLevel(1));
             Console.WriteLine(tree.ToStringLevel(2));
+
+            Console.WriteLine(tree.GetSecondLargestValue());
             
         }
     }

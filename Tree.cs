@@ -60,6 +60,17 @@ namespace DataStructures
        public string ToStringDepthFirst(){
            return root == null ? string.Empty : root.ToStringDepthFirst();
        }
+
+       public int GetSecondLargestValue(){
+           return GetSecondLargestValue(root, null);
+       }
+
+       private int GetSecondLargestValue(Node node, Node parentNode){
+           if(node == null) { return -1;}
+           else if (node.Left == null && node.Right == null) { return parentNode == null ? -1 : parentNode.Value;}
+           else if (node.Right == null) {return node.Left.Value;}
+           else return GetSecondLargestValue(node.Right, node);
+       }
     }
 
     internal class Node
