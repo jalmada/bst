@@ -61,6 +61,10 @@ namespace DataStructures
            return root == null ? string.Empty : root.ToStringDepthFirst();
        }
 
+       public string ToStringDepthFirstIterative(){
+           return root == null ? string.Empty : root.ToStringDepthFirstIterative();
+       }
+
        public int GetSecondLargestValue(){
            return GetSecondLargestValue(root, null);
        }
@@ -160,6 +164,30 @@ namespace DataStructures
         }
 
 
+        public string ToStringDepthFirstIterative(){
+            var stack = new Stack<Node>();
+            var strb = new StringBuilder();
+
+            var current = this;
+            stack.Push(current);
+            
+
+            while(stack.Count > 0){
+                current = stack.Pop();
+
+                if(current.Left != null){
+                    stack.Push(current.Left);
+                }
+                
+                if(current.Right != null){
+                    stack.Push(current.Right);
+                }
+
+                strb.Append(current.Value);
+            }
+            
+            return strb.ToString();
+        }
 
         public string ToStringInOrder(){
             StringBuilder strb = new StringBuilder();

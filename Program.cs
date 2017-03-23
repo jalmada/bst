@@ -37,6 +37,8 @@ namespace tree
             Console.WriteLine(tree.ToStringLevel(2));
 
             Console.WriteLine(tree.GetSecondLargestValue());
+            Console.WriteLine(tree.ToStringDepthFirstIterative());
+            
             
         }
     }
