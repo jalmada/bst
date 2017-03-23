@@ -57,6 +57,8 @@ namespace DataStructures
        public string ToStringInOrder(){
            return root == null ? string.Empty : root.ToStringInOrder();
        }
+
+
        public string ToStringDepthFirst(){
            return root == null ? string.Empty : root.ToStringDepthFirst();
        }
@@ -173,15 +175,16 @@ namespace DataStructures
             
 
             while(stack.Count > 0){
+                
                 current = stack.Pop();
 
-                if(current.Left != null){
-                    stack.Push(current.Left);
-                }
-                
                 if(current.Right != null){
                     stack.Push(current.Right);
                 }
+
+                if(current.Left != null){
+                    stack.Push(current.Left);
+                }    
 
                 strb.Append(current.Value);
             }
